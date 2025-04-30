@@ -1,6 +1,6 @@
 # Image Changer Pop-up
 
-A customizable, interactive pop-up that cycles through images when a button is clicked, with a smooth fade transition effect.
+A customizable, interactive pop-up that cycles through images when a button is clicked
 
 
 ## Project Overview
