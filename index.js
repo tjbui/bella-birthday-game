@@ -13,7 +13,7 @@ const images = [
 ];
 
 // =============================================
-// STEP 2: Get HTML elements 
+// STEP 2: Reference HTML elements 
 // =============================================
 // Connect to the elements we need to change
 const imageContent = document.querySelector('.image-content');  // Image container
@@ -27,7 +27,7 @@ const finalMessage = document.querySelector('.final-message');  // Final message
 let currentIndex = 0;
 
 // =============================================
-// STEP 4: Image change function 
+// STEP 4: Update image function 
 // =============================================
 // Function to change images with fade effect
 function updateImage() {
