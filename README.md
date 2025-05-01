@@ -47,7 +47,7 @@ image-changer-popup/
 
 1. The page loads with a stylized pop-up container
 2. The first image is displayed automatically
-3. When the user clicks the "Grow!" button:
+3. When the user clicks the button:
    - The current image fades out
    - The next image is preloaded
    - Once loaded, the new image fades in
@@ -56,6 +56,32 @@ image-changer-popup/
    - A final message is displayed
 
 ## Customization Options
+
+### Artwork Images Requirements
+- Animation sequence (4-8 images): 300 x 360px - transparent background png recommended
+- Background image: 2093 x 1132 px
+- Favicon: flexible sizing, mine is 238 x 279px - transparent background png recommended
+- Close and shrink icons: flexible sizing as long as they're square aspect ratio, mine is 287 x 287px 
+
+If you would like to change the dimensions of images in this project, you'll need to update the corresponding aspect ratio in the CSS. Here are the specific sections to modify:
+
+For the image content (animation area):
+```css
+.image-content {
+  /* ... other properties ... */
+  height: 65%;
+  aspect-ratio: 142.5 / 171; /* Change these values to match your animation dimensions (300x360px) */
+}
+``` 
+
+For the background image sizing:
+```css
+body {
+  /* ... other properties ... */
+  background-size: 100% auto; /* Adjust based on your background image dimensions (2093x1132px) */
+}
+```
+
 
 ### Colors and Styling
 
