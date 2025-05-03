@@ -156,7 +156,7 @@ const images = [
 
 ## 🌐 Hosting on Netlify
 
-You can easily deploy this project using Netlify's free plan:
+You can deploy this project using Netlify's free plan:
 
 **Prepare your project**:
 * Make sure your files are named correctly: `index.html` and `index.js` (if you renamed them)
@@ -179,12 +179,6 @@ You can easily deploy this project using Netlify's free plan:
 * If you used the drag and drop method, simply drag and drop your folder again
 * If you connected to Git, just push changes to your repository
 
-
-## Installation
-
-1. Download or clone this repository
-2. No build process needed - open `index.html` directly in your browser
-3. To modify, edit the HTML, CSS, and JavaScript files with any text editor
 
 ## Project Extension Ideas
 
