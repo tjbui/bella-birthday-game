@@ -54,6 +54,26 @@ image-changer-popup/
 4. After reaching the final image:
    - The button disappears
    - A final message is displayed
+  
+## How to recreate this project 
+1. Clone the project from GitHub
+2. Open the project in your preferred text editor (VScode or any text editors)
+3. Review the project structure and files:
+   - `index.html`: Contains the basic structure of the pop-up
+   - `style.css`: Contains all styling and visual customization options
+   - `index.js`: Handles the image changing functionality
+4. Open `index.html` in your browser to view the project:
+   - Double-click the file in your file explorer
+5. Customize the project by following the instructions in the code:
+   - Modify CSS variables in `style.css` to change colors, fonts, and styling
+   - Replace images in the `assets` folder (see Artwork Images Requirements above)
+   - Update text content in the HTML file
+6. For the JavaScript functionality:
+   - I commented the code for the functionality of each line so I recommend trying to redo it yourself :) 
+7. Test your changes by refreshing the browser to see updates in real-time
+8. For deployment, follow the Netlify hosting instructions in the section below
+
+*Make sure the project structure and file names match the current names you have, or rename them in the code.
 
 ## Customization Options
 
@@ -61,7 +81,9 @@ image-changer-popup/
 - Animation sequence (4-8 images): 300 x 360px - transparent background png recommended
 - Background image: 2093 x 1132 px
 - Favicon: flexible sizing, mine is 238 x 279px - transparent background png recommended
-- Close and shrink icons: flexible sizing as long as they're square aspect ratio, mine is 287 x 287px 
+- Close and shrink icons: flexible sizing as long as they're square aspect ratio, mine is 287 x 287px
+
+**Make sure the project structure and file names match the current names you have, or rename them in the code.
 
 If you would like to change the dimensions of images in this project, you'll need to update the corresponding aspect ratio in the CSS. Here are the specific sections to modify:
 
