@@ -12,6 +12,42 @@ const images = [
   './assets/image-content/image-6.png'
 ];
 
+const beachImages = [
+  {
+    src: './assets/beach-images/beach.png',
+    caption: 'You made it to the beach 🌴'
+  },
+  {
+    src: './assets/beach-images/beach-tj.png',
+    caption: 'Oh look, there\'s TJ!'
+  },
+  {
+    src: './assets/beach-images/beach-tj-talking.png',
+    caption: 'He says hi :)'
+  },
+  {
+    src: './assets/beach-images/beach-bella.png',
+    caption: 'Now Bella is here too!!'
+  }
+  // Add more as needed
+];
+
+let beachIndex = 1;
+
+const beachImg = document.getElementById('beach-image');
+const beachCaption = document.getElementById('beach-caption');
+const beachContent = document.getElementById('beach-content');
+
+function updateBeachScene() {
+  const scene = beachImages[beachIndex];
+  beachImg.src = scene.src;
+  beachCaption.textContent = scene.caption;
+
+  beachIndex = (beachIndex + 1) % beachImages.length; // loop around if needed
+}
+
+beachContent.addEventListener('click', updateBeachScene); // handles mobile tap too
+
 // =============================================
 // STEP 2: Reference HTML elements 
 // =============================================
