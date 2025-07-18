@@ -16,7 +16,7 @@ const images = [
 // STEP 2: Reference HTML elements 
 // =============================================
 // Connect to the elements we need to change
-const imageContent = document.querySelector('.image-content');  // Image container
+const imageContent = document.querySelector('#intro-content .image-content');
 const mainButton = document.getElementById('main-button');      // Image switch button
 const finalMessage = document.querySelector('.final-message');  // Final message
 
@@ -75,4 +75,10 @@ mainButton.addEventListener('click', () => {
     // Show the beach button!
     document.getElementById('beach-button').style.display = 'inline-block';
   }
+});
+
+document.getElementById('beach-button').addEventListener('click', () => {
+  document.getElementById('intro-content').style.display = 'none';
+  document.getElementById('beach-content').style.display = 'flex';
+  document.getElementById('beach-image').style.display = 'block';
 });

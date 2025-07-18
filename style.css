@@ -54,7 +54,7 @@ h1 {
 }
   
 /* Container styles */
-	.container {
+.container {
 	position: relative;
 	width: 420px;
 	aspect-ratio: 420 / 330;
@@ -182,4 +182,14 @@ header {
 	h1 {
 		font-size: calc(var(--font-size-large) - 0.25rem);
 	}
+}
+
+#beach-image {
+  background-image: url('./assets/beach.png');
+  background-repeat: no-repeat;
+  background-size: 640px 576px;
+  width: 640px;
+  height: 576px;
+  image-rendering: pixelated;
+  margin: 0 auto;
 }

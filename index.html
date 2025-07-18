@@ -21,28 +21,27 @@
 <body>
 	<div class="container">
 		<header>
-		<!-- CUSTOMIZE: Change the header text -->
-		<h1>Happy Birthday to my baby :333</h1>
+			<!-- CUSTOMIZE: Change the header text -->
+			<h1>Happy birthday baby :33333</h1>
 		
-		<div class="shrink-close-icons">
-			<!-- CUSTOMIZE: Update icon paths/filenames as needed -->
-			<img src="./assets/shrink-icon.png" alt="Shrink Icon" class="shrink-icon" />
-			<img src="./assets/close-icon.png" alt="Close Icon" class="shrink-icon" />
-		</div> 
 		</header>
 		
-		<div class="inner-container">
-		<!-- The image is loaded via CSS from the --image-path-content variable -->
-		<div class="image-content"></div>
-		
-		<!-- CUSTOMIZE: Change the button text -->
-		<button id="main-button">Grow!</button>
-		
-		<!-- CUSTOMIZE: Change the final message text -->
-		<div class="final-message">Have a good day!</div>
+		<div class="inner-container" id="intro-content">
+			<!-- bunny grow logic here -->
+			<div class="image-content"></div>
+			<button id="main-button">Grow!</button>
+			<div class="final-message">Have a good day!</div>
+			<button id="beach-button" style="display: none;">Click to go to the beach!!</button>
+		</div>
 
-		<!-- Beach button appears after the image cycle -->
-		<button id="beach-button" class="styled-button" style="display: none;">Go to beach!!</button>
+		<div class="inner-container" id="beach-content" style="display: none;">
+			<img src="./assets/beach.png" id="beach-image" style="
+			width: 280px;
+			height: 280px;
+			image-rendering: pixelated;
+			display: none;
+			" />
+  			<div class="final-message">You made it to the beach 🌴</div>
 		</div>
 	</div>
 
