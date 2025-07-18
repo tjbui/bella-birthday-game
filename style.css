@@ -193,3 +193,10 @@ header {
   image-rendering: pixelated;
   margin: 0 auto;
 }
+
+#beach-caption {
+  margin-top: 8px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
