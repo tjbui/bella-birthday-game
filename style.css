@@ -82,6 +82,8 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	overflow-y: auto;
+
 }
   
 /* Header */
@@ -185,18 +187,20 @@ header {
 }
 
 #beach-image {
-  background-image: url('./assets/beach.png');
-  background-repeat: no-repeat;
-  background-size: 640px 576px;
-  width: 640px;
-  height: 576px;
+  width: 100%;
+  height: auto;
+  max-width: 280px;
   image-rendering: pixelated;
-  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 #beach-caption {
-  margin-top: 8px;
-  font-family: "Pixelify Sans", sans-serif;
-  font-size: 1rem;
+  font-family: var(--font-family-main);
+  font-size: 0.9rem;
+  color: var(--color-message-text);
   text-align: center;
+  padding: 0.3rem;
+  word-wrap: break-word;
+  max-width: 90%;
 }
