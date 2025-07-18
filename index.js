@@ -71,5 +71,8 @@ mainButton.addEventListener('click', () => {
   if (currentIndex === images.length - 1) {
     mainButton.style.display = 'none';
     finalMessage.style.display = 'block';
+
+    // Show the beach button!
+    document.getElementById('beach-button').style.display = 'inline-block';
   }
 });
