@@ -57,7 +57,7 @@ h1 {
 .container {
 	position: relative;
 	width: 420px;
-	aspect-ratio: 420 / 330;
+	aspect-ratio: 420 / 360;
 	border: var(--border-width-main) solid var(--color-border);
 	border-radius: var(--border-radius);
 	background: var(--color-main-container-background);
@@ -73,7 +73,7 @@ h1 {
 .inner-container {
 	position: relative;
 	width: 100%;
-	aspect-ratio: 430 / 280;
+	aspect-ratio: 430 / 350;
 	border: var(--border-width-inner) solid var(--color-border);
 	border-radius: var(--border-radius);
 	background: var(--color-inner-container-background);
