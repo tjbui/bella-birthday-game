@@ -38,6 +38,7 @@ body {
 	padding: 0;
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: var(--color-page-background) var(--image-path-background) bottom center no-repeat;
@@ -57,7 +58,7 @@ h1 {
 .container {
 	position: relative;
 	width: 420px;
-	aspect-ratio: 420 / 360;
+	aspect-ratio: 420 / 380;
 	border: var(--border-width-main) solid var(--color-border);
 	border-radius: var(--border-radius);
 	background: var(--color-main-container-background);
@@ -67,13 +68,14 @@ h1 {
 	align-items: center;
 	overflow: hidden;
 	padding: var(--padding-container);
+	margin-bottom: 1rem;
 }
   
 /* Inner container */
 .inner-container {
 	position: relative;
 	width: 100%;
-	aspect-ratio: 430 / 350;
+	aspect-ratio: 430 / 600;
 	border: var(--border-width-inner) solid var(--color-border);
 	border-radius: var(--border-radius);
 	background: var(--color-inner-container-background);
@@ -189,18 +191,54 @@ header {
 #beach-image {
   width: 100%;
   height: auto;
-  max-width: 280px;
+  max-height: 100%;
+  object-fit: contain; /* prevents distortion */
   image-rendering: pixelated;
   display: block;
-  margin-bottom: 1rem;
 }
 
 #beach-caption {
   font-family: var(--font-family-main);
-  font-size: 0.9rem;
+  font-size: 2.0rem;
   color: var(--color-message-text);
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.3rem 0.6rem;
   word-wrap: break-word;
   max-width: 90%;
+  background-color: white;           /* ✅ Add this */
+  border-radius: 0.5rem;             /* Optional: round the corners */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);  /* Optional: subtle shadow for contrast */
+  margin-bottom: 1rem;
+}
+
+.beach-inner {
+  aspect-ratio: unset; /* remove forced ratio */
+  height: 100%;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.styled-button2 {
+	position: relative;
+	height: 50px; /* same as #main-button */
+	width: 190px; /* slightly wider */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--gap-button);
+	border: var(--border-width-inner) solid var(--color-border);
+	border-radius: var(--border-radius);
+	background: var(--color-button-background);
+	color: var(--color-button-text);
+	text-align: center;
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-medium); /* same as main */
+	font-weight: 400;
+	font-style: normal;
+	line-height: normal;
+	transition: transform 0.2s ease;
+}
+
+.styled-button2:hover {
+	transform: scale(1.05);
 }
