@@ -242,3 +242,11 @@ header {
 .styled-button2:hover {
 	transform: scale(1.05);
 }
+
+#choice-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
